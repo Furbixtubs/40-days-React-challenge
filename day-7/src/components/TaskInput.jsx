@@ -14,8 +14,8 @@ export default function TaskInput() {
   function handleToggle(indexToToggle) {
     setTask((prev) =>
       prev.map((item, i) =>
-        i === indexToToggle ? { ...item, completed: !item.completed } : item
-      )
+        i === indexToToggle ? { ...item, completed: !item.completed } : item,
+      ),
     );
   }
 
